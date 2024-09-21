@@ -1,0 +1,5 @@
+compiled/
+.idea/
+*.*~
+*.DS_Store
+config_data.rkt
