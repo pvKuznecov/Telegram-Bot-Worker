@@ -1,6 +1,17 @@
 # Telegram-Bot-Worker
 Simple worker from Telegram.
 
+## How it works
+Key points to know:
+<ul>
+  <li>Getting updates via the "getUpdates" method (but nothing prevents you from switching to webhooks).</li>
+  <li>All data required to communicate with the Telegram API is located in the "config_data.rkt" file (the file is added to the .gitignore exception list).</li>
+  <li>Script part of the bot (processing incoming messages): in the "../scn_*botName*" directory (the folder is created automatically when the worker starts; it should always be there).</li>
+  <li>Account storage: in the "../auth_*botName*" directory (the folder is created automatically when the worker starts; it should always be there).</li>
+  <li>User session data storage: in the "../session_*botName*" directory (the folder is created automatically when the worker starts; it should always be there).</li>
+</ul>
+
+<hr>
 Простой воркер для бота Telegram (без БД).
 
 ## Принцип работы
